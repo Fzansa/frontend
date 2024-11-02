@@ -14,7 +14,7 @@ const LinkClickCounts = () => {
     const getClickCount = async () => {
       if (shortId !== "") {
         let res = await axios.get(
-          `${API_URL}analytics/${shortId}`
+          `${API_URL}/analytics/${shortId}`
         );
         let data = await res.data;
         setClick(data?.totalClicks);

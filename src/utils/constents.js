@@ -1,1 +1,1 @@
-export const API_URL = "https://shrt-two.vercel.app/";
+export const API_URL = "https://shrt-two.vercel.app";

@@ -18,7 +18,7 @@ function App() {
       const data = await res.data;
       setShortId(data?.shortId)
       localStorage.setItem('shortId', data?.shortId);
-      localStorage.setItem('shortURL', `${API_URL}${data?.shortId}`);
+      localStorage.setItem('shortURL', `${API_URL}/${data?.shortId}`);
       let formattedUrl = url;
 
       // Check if the URL does not start with "http" or "https"
